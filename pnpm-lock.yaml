@@ -14,8 +14,8 @@ devDependencies:
     specifier: 1.4.0
     version: 1.4.0(tailwindcss@3.3.7)(typescript@5.3.3)(vite@5.0.8)
   '@iconify-json/carbon':
-    specifier: ^1.1.26
-    version: 1.1.26
+    specifier: ^1.1.27
+    version: 1.1.27
   '@iconify-json/mdi':
     specifier: ^1.1.61
     version: 1.1.61
@@ -979,8 +979,8 @@ packages:
       - windicss
     dev: true
 
-  /@iconify-json/carbon@1.1.26:
-    resolution: {integrity: sha512-0y6JstqPCsjEiUuyTTdHE7Wd9gGlxzH2dEfvKUJe5E741qRgLlIipVdBoCkOtbyAT92WEcU8BNfDaC585OCC8w==}
+  /@iconify-json/carbon@1.1.27:
+    resolution: {integrity: sha512-tJVXv9+D9cjU5HcaY+8J0awv9AL/Mjo9MWR/fxHfHFPP/iokjPBEgq4jOBDGNe8W0k/BTrVI3zpgZjLoi6RNGg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
