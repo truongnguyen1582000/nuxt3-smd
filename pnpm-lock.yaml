@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^0.5.1
     version: 0.5.1(typescript@5.3.3)(vue@3.3.11)
   '@sfxcode/formkit-primevue':
-    specifier: ^1.5.8
-    version: 1.5.8(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11)
+    specifier: ^1.5.9
+    version: 1.5.9(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11)
   '@vitejs/plugin-vue':
     specifier: ^4.5.2
     version: 4.5.2(vite@5.0.8)(vue@3.3.11)
@@ -2216,15 +2216,15 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@sfxcode/formkit-primevue@1.5.8(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11):
-    resolution: {integrity: sha512-nkuUgSf2T8NVA92UnU609LalLa8QMOd4LaCRSMkoqbNd8aMeDP9ewmwjerPCilYTQmNaMMGTGafkGqpbhyDckw==}
+  /@sfxcode/formkit-primevue@1.5.9(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11):
+    resolution: {integrity: sha512-R6zwMRJnJS625OFQB1sB3C+w7tXYCBlcm1UwG6gMGpmShjvrxN6NM3hl11WRRFGL7XF+yNrSGtD+tVx+wE7YZQ==}
     dependencies:
       '@formkit/addons': 1.4.0
       '@formkit/i18n': 1.4.0
       '@formkit/vue': 1.4.0(tailwindcss@3.3.7)(typescript@5.3.3)
       add: 2.0.6
       primeicons: 6.0.1
-      primevue: 3.43.0(vue@3.3.11)
+      primevue: 3.44.0(vue@3.3.11)
     transitivePeerDependencies:
       - tailwindcss
       - typescript
@@ -7257,6 +7257,14 @@ packages:
 
   /primevue@3.43.0(vue@3.3.11):
     resolution: {integrity: sha512-iW2gEbM79v5RzRYIrg010fN1DRr5CIRdMsVMG3pBUCq0rzUGnm/hlzJ9ThDZyJrA0/tEKByAo/Pra56s5PnvqQ==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.3.11(typescript@5.3.3)
+    dev: true
+
+  /primevue@3.44.0(vue@3.3.11):
+    resolution: {integrity: sha512-BqSg6rKP0vq7WRHhLlVt4BD4rQZbVVXjgSfOAcebv3mO4wJZcJbgC04mxAI9fl26PhmPy1jLOuCtNOBWo7IekA==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
