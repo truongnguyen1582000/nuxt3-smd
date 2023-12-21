@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@formkit/nuxt": "1.4.0",
-    "@iconify-json/carbon": "^1.1.26",
+    "@iconify-json/carbon": "^1.1.27",
     "@iconify-json/mdi": "^1.1.61",
     "@iconify-json/prime": "^1.1.9",
     "@iconify-json/twemoji": "^1.1.15",
