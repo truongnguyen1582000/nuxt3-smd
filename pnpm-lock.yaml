@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^1.1.61
     version: 1.1.61
   '@iconify-json/prime':
-    specifier: ^1.1.9
-    version: 1.1.9
+    specifier: ^1.1.10
+    version: 1.1.10
   '@iconify-json/twemoji':
     specifier: ^1.1.15
     version: 1.1.15
@@ -991,8 +991,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/prime@1.1.9:
-    resolution: {integrity: sha512-Fs/g7fzv8LOS1RVURcf1c71igUV6KSDtpfUfFayszQnpF2E018mBrooacmvS1EvIbc2Ocfvg8wbnjikvJDe1bw==}
+  /@iconify-json/prime@1.1.10:
+    resolution: {integrity: sha512-H8ilVUZbnQ50ELWO88dZ9oBQI5VyGmpKE5mb7x/wFmSoIjmc7ZGJ4lFE+8kfo6NcFGDA9NMfJdm2wUa0IABSIA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
