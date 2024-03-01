@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^0.5.1
     version: 0.5.1(typescript@5.3.3)(vue@3.3.11)
   '@sfxcode/formkit-primevue':
-    specifier: ^1.5.8
-    version: 1.5.8(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11)
+    specifier: ^1.8.0
+    version: 1.8.0(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11)
   '@vitejs/plugin-vue':
     specifier: ^4.5.2
     version: 4.5.2(vite@5.0.8)(vue@3.3.11)
@@ -290,6 +290,14 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.23.6
+
+  /@babel/parser@7.24.0:
+    resolution: {integrity: sha512-QuP/FxEAzMSjXygs8v4N9dvdXzEHN4W1oF3PxuWAtPo08UdM17u89RDMgjLn/mlc56iM0HlLmVkO/wgR+rDgHg==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+    dependencies:
+      '@babel/types': 7.23.6
+    dev: true
 
   /@babel/plugin-proposal-decorators@7.23.6(@babel/core@7.23.6):
     resolution: {integrity: sha512-D7Ccq9LfkBFnow3azZGJvZYgcfeqAw3I1e5LoTpj6UKIFQilh8yqXsIGcRIqbBdsPWIz+Ze7ZZfggSj62Qp+Fg==}
@@ -850,13 +858,13 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /@formkit/addons@1.4.0:
-    resolution: {integrity: sha512-6yAiTwepnLi8gojmUYKVvmlUtjX1xA3v7RPgeG35avD616sO1PyKQFItT4Yd5zhwiLFAqkuJ9QXbFYh3E+g80Q==}
+  /@formkit/addons@1.5.9:
+    resolution: {integrity: sha512-YchMmYhZHkdj1F1qTSpB+AErq0imIjB1VmsRtaPHYpbk3ucGWUqmsEBDU/Xy+zP4lTrHlPLWm2Oz1mLfPWiwTA==}
     dependencies:
       '@formkit/auto-animate': 0.8.1
-      '@formkit/core': 1.4.0
-      '@formkit/inputs': 1.4.0
-      '@formkit/utils': 1.4.0
+      '@formkit/core': 1.5.9
+      '@formkit/inputs': 1.5.9
+      '@formkit/utils': 1.5.9
     dev: true
 
   /@formkit/auto-animate@0.8.1:
@@ -869,11 +877,24 @@ packages:
       '@formkit/utils': 1.4.0
     dev: true
 
+  /@formkit/core@1.5.9:
+    resolution: {integrity: sha512-hkF2uwmXcyeGqrYAO1RN3me77NdRWhuH4pZP+A2xlGZqBLx98nvABYUfTiQsCmdnPv9RkGHHB7qTq9BOvFATHQ==}
+    dependencies:
+      '@formkit/utils': 1.5.9
+    dev: true
+
   /@formkit/dev@1.4.0:
     resolution: {integrity: sha512-y71zSZGAWdqjuj5p7IvptJXgDXYFTZrJSjZ9HeQjNYJ1n3Nwc7latTzJSEQyOHuboSzRWafATYNeB3pqiTvBYg==}
     dependencies:
       '@formkit/core': 1.4.0
       '@formkit/utils': 1.4.0
+    dev: true
+
+  /@formkit/dev@1.5.9:
+    resolution: {integrity: sha512-aeD53iH6WD/3jKiYyGmZgvocGQv77NHHD4MF5+I/DvApu0IP1gTArsmBFaBDEVr7t5o/xO2zH06Up7sJcA0+mA==}
+    dependencies:
+      '@formkit/core': 1.5.9
+      '@formkit/utils': 1.5.9
     dev: true
 
   /@formkit/i18n@1.4.0:
@@ -884,11 +905,26 @@ packages:
       '@formkit/validation': 1.4.0
     dev: true
 
+  /@formkit/i18n@1.5.9:
+    resolution: {integrity: sha512-4FVqE1YciXSwl2KUuGRvpizZXBnwZACVRMrNjSn2WokVsOPYdmgwP1+35nG6LVU6i8bcOv/8fASCLUO3ADe7mw==}
+    dependencies:
+      '@formkit/core': 1.5.9
+      '@formkit/utils': 1.5.9
+      '@formkit/validation': 1.5.9
+    dev: true
+
   /@formkit/inputs@1.4.0:
     resolution: {integrity: sha512-6IvgjOZnvtYq2oSEXkarDCaabxl4o29FhFmD64d0lC8WTaVLcRPKgo9BsLaVvLYfJgVKDzFyPIMGLFNhTsiJ/Q==}
     dependencies:
       '@formkit/core': 1.4.0
       '@formkit/utils': 1.4.0
+    dev: true
+
+  /@formkit/inputs@1.5.9:
+    resolution: {integrity: sha512-UYv0MxDMaADSd3w+pXsmt83WwQ0Z00MOABjL3bgTxc4uxDRJ5L6kRV2Qz4Wp82azOuBKnAqXa1Uen17VZb4J/A==}
+    dependencies:
+      '@formkit/core': 1.5.9
+      '@formkit/utils': 1.5.9
     dev: true
 
   /@formkit/nuxt@1.4.0(tailwindcss@3.3.7)(typescript@5.3.3)(vite@5.0.8):
@@ -921,12 +957,27 @@ packages:
       '@formkit/utils': 1.4.0
     dev: true
 
+  /@formkit/observer@1.5.9:
+    resolution: {integrity: sha512-FrrHFuieSdBUBCYaHZFD4VfGCoK1+qNI8EJguIUgRx4L3p22T1rvfsVr20xGi4Si3Ghq2A9o2M5wou0/8usVTA==}
+    dependencies:
+      '@formkit/core': 1.5.9
+      '@formkit/utils': 1.5.9
+    dev: true
+
   /@formkit/rules@1.4.0:
     resolution: {integrity: sha512-NEVDjN89Zwx26Ze0gwqd/Bml3d4QIzp3SDps3uND9IE1Ssd3yvvSSjF5jVeHLE7ZMDLUDfOepf5xyqhPE1UbqA==}
     dependencies:
       '@formkit/core': 1.4.0
       '@formkit/utils': 1.4.0
       '@formkit/validation': 1.4.0
+    dev: true
+
+  /@formkit/rules@1.5.9:
+    resolution: {integrity: sha512-kslIu91gs6CmStnbUl+wzerLt0Dzm3jb4VisfUTlmrtXfMpQCD4BwF6Dic90weVbbYlEyeFroY3vONvIIRruTw==}
+    dependencies:
+      '@formkit/core': 1.5.9
+      '@formkit/utils': 1.5.9
+      '@formkit/validation': 1.5.9
     dev: true
 
   /@formkit/themes@1.4.0(tailwindcss@3.3.7):
@@ -947,8 +998,30 @@ packages:
       tailwindcss: 3.3.7
     dev: true
 
+  /@formkit/themes@1.5.9(tailwindcss@3.3.7):
+    resolution: {integrity: sha512-hQ2paR/ycOsq25/44M6WQtniYmri9/WIU59zGyx0c34kPBh1kZTdHOkXNL/Er9nITA5O+Dlax5PseO5UH2/jYQ==}
+    peerDependencies:
+      tailwindcss: ^3.2.0
+      unocss: ^0.31.0
+      windicss: ^3.0.0
+    peerDependenciesMeta:
+      tailwindcss:
+        optional: true
+      unocss:
+        optional: true
+      windicss:
+        optional: true
+    dependencies:
+      '@formkit/core': 1.5.9
+      tailwindcss: 3.3.7
+    dev: true
+
   /@formkit/utils@1.4.0:
     resolution: {integrity: sha512-HAkULL7/0PnRZmMJyFHZ3wxxTYl+tuJrSk13/LQyxB77luwlq8sCvlGaF5cz+0JX70HSVVc0ZJjJT4o0uTVeYQ==}
+    dev: true
+
+  /@formkit/utils@1.5.9:
+    resolution: {integrity: sha512-Jaa9Q89WovxMkNcRE0IK1G8WfHwg7MDkCx9FJRhqJ+e9wGW0C2+t/vAYp0D3kS42jpNK7TTPIcozh9q2VGSUdg==}
     dev: true
 
   /@formkit/validation@1.4.0:
@@ -957,6 +1030,14 @@ packages:
       '@formkit/core': 1.4.0
       '@formkit/observer': 1.4.0
       '@formkit/utils': 1.4.0
+    dev: true
+
+  /@formkit/validation@1.5.9:
+    resolution: {integrity: sha512-E2d9pVA++PQkiwanLvp4GW+tBGGg0JBsZTAe/Lobjuc8k4Skt3sjaRtczSFQx2Cwf+S8C4OMPvYx9alGF7vl1A==}
+    dependencies:
+      '@formkit/core': 1.5.9
+      '@formkit/observer': 1.5.9
+      '@formkit/utils': 1.5.9
     dev: true
 
   /@formkit/vue@1.4.0(tailwindcss@3.3.7)(typescript@5.3.3):
@@ -972,6 +1053,26 @@ packages:
       '@formkit/utils': 1.4.0
       '@formkit/validation': 1.4.0
       vue: 3.3.11(typescript@5.3.3)
+    transitivePeerDependencies:
+      - tailwindcss
+      - typescript
+      - unocss
+      - windicss
+    dev: true
+
+  /@formkit/vue@1.5.9(tailwindcss@3.3.7)(typescript@5.3.3):
+    resolution: {integrity: sha512-4tVYmu22ub2X+qHafmoh7kZgI61DFLDcSIt3A8R+vS1a0593odQY3TIgy8WJSWCFQ6QeS/chOzqdinXyFtuC8g==}
+    dependencies:
+      '@formkit/core': 1.5.9
+      '@formkit/dev': 1.5.9
+      '@formkit/i18n': 1.5.9
+      '@formkit/inputs': 1.5.9
+      '@formkit/observer': 1.5.9
+      '@formkit/rules': 1.5.9
+      '@formkit/themes': 1.5.9(tailwindcss@3.3.7)
+      '@formkit/utils': 1.5.9
+      '@formkit/validation': 1.5.9
+      vue: 3.4.21(typescript@5.3.3)
     transitivePeerDependencies:
       - tailwindcss
       - typescript
@@ -2216,15 +2317,15 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@sfxcode/formkit-primevue@1.5.8(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11):
-    resolution: {integrity: sha512-nkuUgSf2T8NVA92UnU609LalLa8QMOd4LaCRSMkoqbNd8aMeDP9ewmwjerPCilYTQmNaMMGTGafkGqpbhyDckw==}
+  /@sfxcode/formkit-primevue@1.8.0(tailwindcss@3.3.7)(typescript@5.3.3)(vue@3.3.11):
+    resolution: {integrity: sha512-tgT8ikHRVi/eN/cjpW5iRTOgHV2oMMiU+wOuH8rZorryrHWyvPMG8Y6V0D9gnf8Q1+7a8zf9NFpW9MnIzx4ZTw==}
     dependencies:
-      '@formkit/addons': 1.4.0
-      '@formkit/i18n': 1.4.0
-      '@formkit/vue': 1.4.0(tailwindcss@3.3.7)(typescript@5.3.3)
+      '@formkit/addons': 1.5.9
+      '@formkit/i18n': 1.5.9
+      '@formkit/vue': 1.5.9(tailwindcss@3.3.7)(typescript@5.3.3)
       add: 2.0.6
       primeicons: 6.0.1
-      primevue: 3.43.0(vue@3.3.11)
+      primevue: 3.49.1(vue@3.3.11)
     transitivePeerDependencies:
       - tailwindcss
       - typescript
@@ -2524,11 +2625,28 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /@vue/compiler-core@3.4.21:
+    resolution: {integrity: sha512-MjXawxZf2SbZszLPYxaFCjxfibYrzr3eYbKxwpLR9EQN+oaziSu3qKVbwBERj1IFIB8OLUewxB5m/BFzi613og==}
+    dependencies:
+      '@babel/parser': 7.24.0
+      '@vue/shared': 3.4.21
+      entities: 4.5.0
+      estree-walker: 2.0.2
+      source-map-js: 1.0.2
+    dev: true
+
   /@vue/compiler-dom@3.3.11:
     resolution: {integrity: sha512-zoAiUIqSKqAJ81WhfPXYmFGwDRuO+loqLxvXmfUdR5fOitPoUiIeFI9cTTyv9MU5O1+ZZglJVTusWzy+wfk5hw==}
     dependencies:
       '@vue/compiler-core': 3.3.11
       '@vue/shared': 3.3.11
+    dev: true
+
+  /@vue/compiler-dom@3.4.21:
+    resolution: {integrity: sha512-IZC6FKowtT1sl0CR5DpXSiEB5ayw75oT2bma1BEhV7RRR1+cfwLrxc2Z8Zq/RGFzJ8w5r9QtCOvTjQgdn0IKmA==}
+    dependencies:
+      '@vue/compiler-core': 3.4.21
+      '@vue/shared': 3.4.21
     dev: true
 
   /@vue/compiler-sfc@3.3.11:
@@ -2546,11 +2664,32 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /@vue/compiler-sfc@3.4.21:
+    resolution: {integrity: sha512-me7epoTxYlY+2CUM7hy9PCDdpMPfIwrOvAXud2Upk10g4YLv9UBW7kL798TvMeDhPthkZ0CONNrK2GoeI1ODiQ==}
+    dependencies:
+      '@babel/parser': 7.24.0
+      '@vue/compiler-core': 3.4.21
+      '@vue/compiler-dom': 3.4.21
+      '@vue/compiler-ssr': 3.4.21
+      '@vue/shared': 3.4.21
+      estree-walker: 2.0.2
+      magic-string: 0.30.7
+      postcss: 8.4.35
+      source-map-js: 1.0.2
+    dev: true
+
   /@vue/compiler-ssr@3.3.11:
     resolution: {integrity: sha512-Zd66ZwMvndxRTgVPdo+muV4Rv9n9DwQ4SSgWWKWkPFebHQfVYRrVjeygmmDmPewsHyznCNvJ2P2d6iOOhdv8Qg==}
     dependencies:
       '@vue/compiler-dom': 3.3.11
       '@vue/shared': 3.3.11
+    dev: true
+
+  /@vue/compiler-ssr@3.4.21:
+    resolution: {integrity: sha512-M5+9nI2lPpAsgXOGQobnIueVqc9sisBFexh5yMIMRAPYLa7+5wEJs8iqOZc1WAa9WQbx9GR2twgznU8LTIiZ4Q==}
+    dependencies:
+      '@vue/compiler-dom': 3.4.21
+      '@vue/shared': 3.4.21
     dev: true
 
   /@vue/devtools-api@6.5.1:
@@ -2573,6 +2712,12 @@ packages:
       '@vue/shared': 3.3.11
     dev: true
 
+  /@vue/reactivity@3.4.21:
+    resolution: {integrity: sha512-UhenImdc0L0/4ahGCyEzc/pZNwVgcglGy9HVzJ1Bq2Mm9qXOpP8RyNTjookw/gOCUlXSEtuZ2fUg5nrHcoqJcw==}
+    dependencies:
+      '@vue/shared': 3.4.21
+    dev: true
+
   /@vue/runtime-core@3.3.11:
     resolution: {integrity: sha512-g9ztHGwEbS5RyWaOpXuyIVFTschclnwhqEbdy5AwGhYOgc7m/q3NFwr50MirZwTTzX55JY8pSkeib9BX04NIpw==}
     dependencies:
@@ -2580,11 +2725,26 @@ packages:
       '@vue/shared': 3.3.11
     dev: true
 
+  /@vue/runtime-core@3.4.21:
+    resolution: {integrity: sha512-pQthsuYzE1XcGZznTKn73G0s14eCJcjaLvp3/DKeYWoFacD9glJoqlNBxt3W2c5S40t6CCcpPf+jG01N3ULyrA==}
+    dependencies:
+      '@vue/reactivity': 3.4.21
+      '@vue/shared': 3.4.21
+    dev: true
+
   /@vue/runtime-dom@3.3.11:
     resolution: {integrity: sha512-OlhtV1PVpbgk+I2zl+Y5rQtDNcCDs12rsRg71XwaA2/Rbllw6mBLMi57VOn8G0AjOJ4Mdb4k56V37+g8ukShpQ==}
     dependencies:
       '@vue/runtime-core': 3.3.11
       '@vue/shared': 3.3.11
+      csstype: 3.1.3
+    dev: true
+
+  /@vue/runtime-dom@3.4.21:
+    resolution: {integrity: sha512-gvf+C9cFpevsQxbkRBS1NpU8CqxKw0ebqMvLwcGQrNpx6gqRDodqKqA+A2VZZpQ9RpK2f9yfg8VbW/EpdFUOJw==}
+    dependencies:
+      '@vue/runtime-core': 3.4.21
+      '@vue/shared': 3.4.21
       csstype: 3.1.3
     dev: true
 
@@ -2598,8 +2758,22 @@ packages:
       vue: 3.3.11(typescript@5.3.3)
     dev: true
 
+  /@vue/server-renderer@3.4.21(vue@3.4.21):
+    resolution: {integrity: sha512-aV1gXyKSN6Rz+6kZ6kr5+Ll14YzmIbeuWe7ryJl5muJ4uwSwY/aStXTixx76TwkZFJLm1aAlA/HSWEJ4EyiMkg==}
+    peerDependencies:
+      vue: 3.4.21
+    dependencies:
+      '@vue/compiler-ssr': 3.4.21
+      '@vue/shared': 3.4.21
+      vue: 3.4.21(typescript@5.3.3)
+    dev: true
+
   /@vue/shared@3.3.11:
     resolution: {integrity: sha512-u2G8ZQ9IhMWTMXaWqZycnK4UthG1fA238CD+DP4Dm4WJi5hdUKKLg0RMRaRpDPNMdkTwIDkp7WtD0Rd9BH9fLw==}
+    dev: true
+
+  /@vue/shared@3.4.21:
+    resolution: {integrity: sha512-PuJe7vDIi6VYSinuEbUIQgMIRZGgM8e4R+G+/dQTk0X1NEdvgvvgv7m+rfmDH1gZzyA1OjjoWskvHlfRNfQf3g==}
     dev: true
 
   /@vueuse/core@10.7.0(vue@3.3.11):
@@ -5262,6 +5436,13 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
+  /magic-string@0.30.7:
+    resolution: {integrity: sha512-8vBuFF/I/+OSLRmdf2wwFCJCz+nSn0m6DPvGH1fS/KiQoSaR+sETbov0eIk9KhEKy8CYqIkIAnbohxT/4H0kuA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
   /magicast@0.3.2:
     resolution: {integrity: sha512-Fjwkl6a0syt9TFN0JSYpOybxiMCkYNEeOTnOTNRbjphirLakznZXAqrXgj/7GG3D1dvETONNwrBfinvAbpunDg==}
     dependencies:
@@ -7246,6 +7427,15 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
+  /postcss@8.4.35:
+    resolution: {integrity: sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
+
   /pretty-bytes@6.1.1:
     resolution: {integrity: sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
@@ -7257,6 +7447,14 @@ packages:
 
   /primevue@3.43.0(vue@3.3.11):
     resolution: {integrity: sha512-iW2gEbM79v5RzRYIrg010fN1DRr5CIRdMsVMG3pBUCq0rzUGnm/hlzJ9ThDZyJrA0/tEKByAo/Pra56s5PnvqQ==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.3.11(typescript@5.3.3)
+    dev: true
+
+  /primevue@3.49.1(vue@3.3.11):
+    resolution: {integrity: sha512-OmUTqbKbPB63Zqf7uA49cipDi+Qh+/13AYJPwgvsVsI4QmAKIkeibBwkOgj1CNIFlopfF79YmyBshFUAPqlw9A==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
@@ -9117,6 +9315,22 @@ packages:
       '@vue/runtime-dom': 3.3.11
       '@vue/server-renderer': 3.3.11(vue@3.3.11)
       '@vue/shared': 3.3.11
+      typescript: 5.3.3
+    dev: true
+
+  /vue@3.4.21(typescript@5.3.3):
+    resolution: {integrity: sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/compiler-dom': 3.4.21
+      '@vue/compiler-sfc': 3.4.21
+      '@vue/runtime-dom': 3.4.21
+      '@vue/server-renderer': 3.4.21(vue@3.4.21)
+      '@vue/shared': 3.4.21
       typescript: 5.3.3
     dev: true
 

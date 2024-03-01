@@ -21,7 +21,7 @@
     "@nuxt/test-utils": "^3.8.1",
     "@nuxtjs/i18n": "8.0.0-rc.9",
     "@pinia/nuxt": "^0.5.1",
-    "@sfxcode/formkit-primevue": "^1.5.8",
+    "@sfxcode/formkit-primevue": "^1.8.0",
     "@vitejs/plugin-vue": "^4.5.2",
     "@vueuse/nuxt": "^10.7.0",
     "c8": "^8.0.1",
